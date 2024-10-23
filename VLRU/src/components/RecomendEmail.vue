@@ -6,7 +6,7 @@ import IconSend from './icons/IconSend.vue'
     <div id="wrapper">
 
         <span>Вся Афиша в&nbsp;1&nbsp;письме</span>
-        <img class="men" src="../assets/men.png">
+        <img class="men" src="https://github.com/ywur7t/VLru/blob/main/VLRU/src/assets/men.png?raw=true">
         <form>
             <input type="text" v-model="searchQuery" placeholder="Ваш Email">
             <button @click="filterMovies"><IconSend /></button>
