@@ -1,0 +1,267 @@
+<script setup>
+    import EventCard from './EventCard.vue'
+
+
+
+</script>
+
+
+<template>
+
+    <div class="carousel">
+
+      <div class="carousel-slides" :style="carouselStyle">
+        <EventCard v-for="(event, index) in events" :key="index" :event="event" class="carousel-slide"/>
+      </div>
+
+      <div class="carousel-controls">
+        <button class="carousel-control prev" @click="prevSlide">&#10094;</button>
+        <button class="carousel-control next" @click="nextSlide">&#10095;</button>
+      </div>
+
+
+      <div class="carousel-indicators">
+        <span v-for="(slide, index) in events" :key="index" :class="{'active': index === currentIndex}" @click="goToSlide(index)"></span>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</template>
+
+
+<script>
+export default {
+    components: {
+      EventCard
+    },
+    data() {
+      return {
+        currentIndex: 0,
+        events: [
+          {
+            image: "https://s3-alpha-sig.figma.com/img/0a64/94df/4cd07b1826b5eaea63f0fe79bdb78db0?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kwQAPr-Fv2j~holPtnGI3rMCAsDqzVfS4qVgN4pKIkevydDQ~QZRkGIqGk1dCvpuHVqktJ5Fz7vewLqcwxwV1tL6KNjhNxdzstDw~CYk-j3GKLeMk0X0gNa7plJDaWpXlKFFnZtvTX~B3cwvSFZKRjZPZlgETcOr8kBWlCepyi0doRz1WDyhGc1fEcqRlEmMMDigUjIamQl45p-LJ3puX6NhxK6BjNJEj9PdWmvKK5cwCTfVVU4lgw3vvw7D7riXrnCPpEajhTSxupht9bw5GrQGH1hbLoxXF59ZHSjY6ZJVhuOG4HANQB5AzRnGtwBdpwvbtGrCH5et4~CkmeLKkw__",
+            category: "Концерт",
+            type: "Живая музыка",
+            title: "Магия Севера",
+            description: "Волшебный концерт Олены УУТАЙ во Владивостоке 10 ноября 2024",
+            date: "10 ноября 2024",
+            price: "От 600 ₽"
+          },
+          {
+            image: "https://s3-alpha-sig.figma.com/img/0a64/94df/4cd07b1826b5eaea63f0fe79bdb78db0?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kwQAPr-Fv2j~holPtnGI3rMCAsDqzVfS4qVgN4pKIkevydDQ~QZRkGIqGk1dCvpuHVqktJ5Fz7vewLqcwxwV1tL6KNjhNxdzstDw~CYk-j3GKLeMk0X0gNa7plJDaWpXlKFFnZtvTX~B3cwvSFZKRjZPZlgETcOr8kBWlCepyi0doRz1WDyhGc1fEcqRlEmMMDigUjIamQl45p-LJ3puX6NhxK6BjNJEj9PdWmvKK5cwCTfVVU4lgw3vvw7D7riXrnCPpEajhTSxupht9bw5GrQGH1hbLoxXF59ZHSjY6ZJVhuOG4HANQB5AzRnGtwBdpwvbtGrCH5et4~CkmeLKkw__",
+            category: "Фестиваль",
+            type: "На открытом воздухе",
+            title: "Фестиваль Арт-весна",
+            description: "Творческие мероприятия на открытом воздухе во Владивостоке.",
+            date: "12 ноября 2024",
+            price: "Бесплатно"
+          },
+          {
+            image: "https://s3-alpha-sig.figma.com/img/0a64/94df/4cd07b1826b5eaea63f0fe79bdb78db0?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kwQAPr-Fv2j~holPtnGI3rMCAsDqzVfS4qVgN4pKIkevydDQ~QZRkGIqGk1dCvpuHVqktJ5Fz7vewLqcwxwV1tL6KNjhNxdzstDw~CYk-j3GKLeMk0X0gNa7plJDaWpXlKFFnZtvTX~B3cwvSFZKRjZPZlgETcOr8kBWlCepyi0doRz1WDyhGc1fEcqRlEmMMDigUjIamQl45p-LJ3puX6NhxK6BjNJEj9PdWmvKK5cwCTfVVU4lgw3vvw7D7riXrnCPpEajhTSxupht9bw5GrQGH1hbLoxXF59ZHSjY6ZJVhuOG4HANQB5AzRnGtwBdpwvbtGrCH5et4~CkmeLKkw__",
+            category: "Фестиваль",
+            type: "На открытом воздухе",
+            title: "Фестиваль Арт-весна",
+            description: "Творческие мероприятия на открытом воздухе во Владивостоке.",
+            date: "12 ноября 2024",
+            price: "Бесплатно"
+          }
+        ]
+      };
+    },
+    computed: {
+      // Вычисляем стиль для смещения слайдов
+      carouselStyle() {
+        return {
+          transform: `translateX(-${this.currentIndex * 100}%)`
+        };
+      }
+    },
+    methods: {
+      nextSlide() {
+        this.currentIndex = (this.currentIndex + 1) % this.events.length;
+      },
+      prevSlide() {
+        this.currentIndex =
+          (this.currentIndex - 1 + this.events.length) % this.events.length;
+      },
+      goToSlide(index) {
+        this.currentIndex = index;
+      }
+    }
+  };
+</script>
+
+
+<style scoped>
+
+    #wrapper {
+      display: flex;
+      position: relative;
+      flex-wrap: nowrap;
+
+      justify-content: center;
+      border:  1px;
+      border-color: #BEC8DB;
+      border-radius:16px;
+      background:#F9F9FB;
+      width:100%;
+
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      height: inherit;
+      border-radius: 7%;
+
+      overflow: hidden;
+    }
+
+
+    .event-navigation{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .navigation_stripes{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: auto;
+    }
+    .stripe{
+      background-color: #0074bc;
+      width: 20px;
+      height: 2px;
+      margin:auto 10%;
+    }
+    .navigation_buttons{
+      display: flex;
+      justify-content: space-between;
+    }
+
+
+
+
+
+
+
+
+
+    .carousel {
+      position: relative;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+
+      border:  1px solid;
+      border-color: #BEC8DB;
+      border-radius:16px;
+      background:#F9F9FB;
+
+    }
+
+    .carousel-slides {
+      display: flex;
+      transition: transform 0.5s ease;
+
+    }
+
+    .carousel-slide {
+      min-width: 100%;
+    }
+
+    .carousel-slide img {
+      width: 100%;
+      height: auto;
+    }
+
+    .carousel-control {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #FFFFFF;
+      color: black;
+      border: 1px #BEC8DB solid ;
+      border-radius: 12px;
+      width:clamp(50px,100%,10px);
+      height:auto;
+      font-size: 24px;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .carousel-control.prev {
+      right: 100px;
+      width: clamp(50px,100%,10px);
+
+    }
+
+    .carousel-control.next {
+      right: 10px;
+    }
+
+    .carousel-indicators {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: right;
+      top: 10px;
+      right:10px;
+    }
+
+    .carousel-indicators span {
+      display: inline-block;
+      width: 1%;
+      height: 1px;
+      background-color: #333;
+      margin: 0 5px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .carousel-indicators .active {
+      background-color: #1489F0;
+    }
+    .carousel-controls {
+      position: absolute;
+      bottom: 15%;
+      right: 1%;
+      display: flex;
+      gap: 10px;
+      width:fit-content;
+      font-size: 1.5vw;
+    }
+
+
+    @media (max-width: 375px){
+      .carousel-controls{
+        gap:1px;
+        width:10px;
+      }
+      .carousel-control.prev{
+        width:1vw;
+        height:1vw;
+        border-radius: 7px;
+        font-size: 3vw;
+        line-height: 0;
+        padding:3vw 4vw 3vw 3vw;
+      }
+      .carousel-control.next{
+        width:1vw;
+        height:1vw;
+        border-radius: 7px;
+        font-size: 3vw;
+        line-height: 0;
+        padding:3vw 4vw 3vw 3vw;
+      }
+
+    }
+</style>
