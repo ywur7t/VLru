@@ -1,12 +1,8 @@
 # VLRU
-### Compile and Hot-Reload for Development
 
 ```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
+cd ./VLRU/
 npm run build
+npm install -g serve
+serve -s dist -l 5000
 ```
