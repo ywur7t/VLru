@@ -157,7 +157,7 @@ export default {
     .carousel {
       position: relative;
       width: 100%;
-      height: auto;
+      height: inherit;
       overflow: hidden;
 
       border:  1px solid;
@@ -197,6 +197,10 @@ export default {
       cursor: pointer;
       z-index: 1;
     }
+    .carousel-control:hover{
+      background-color: #1489F0;
+      color: white;
+    }
 
     .carousel-control.prev {
       right: 100px;
@@ -215,11 +219,12 @@ export default {
       text-align: right;
       top: 10px;
       right:10px;
+      pointer-events: none;
     }
 
     .carousel-indicators span {
       display: inline-block;
-      width: 1%;
+      width: 4%;
       height: 1px;
       background-color: #333;
       margin: 0 5px;
@@ -262,6 +267,7 @@ export default {
         line-height: 0;
         padding:3vw 4vw 3vw 3vw;
       }
+
 
     }
 </style>

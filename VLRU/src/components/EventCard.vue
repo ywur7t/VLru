@@ -29,21 +29,21 @@
         </div>
       </div>
     </div>
-  </template>
+</template>
 
   <script>
   export default {
     props: {
-      event: Object // Принимает объект события как пропс
+      event: Object
     },
     data() {
       return {
-        isFavorite: false // Для отслеживания состояния "Избранное"
+        isFavorite: false
       };
     },
     methods: {
       toggleFavorite() {
-        this.isFavorite = !this.isFavorite; // Изменение состояния избранного
+        this.isFavorite = !this.isFavorite;
       }
     }
   };
@@ -64,7 +64,7 @@
 }
 img{
 
-  width:clamp(50%,50%,10%);;
+
   max-width: 100%;
   height: auto;
   border-radius: 10%;
@@ -124,8 +124,8 @@ img{
   font-weight: 300;
   line-height: 1vw;
   gap:1%;
-
   cursor:pointer;
+
 }
 .price-button:hover{
   background-color: #14436c;
@@ -149,14 +149,19 @@ img{
     line-height: 2vw;
   }
   .event-title{
-    font-size:3vw;
+    font-size:4vw;
     line-height: 3vw;
     margin-bottom:0;
   }
   .event-description {
     font-size:3vw;
-    line-height: 2.5vw;
+    line-height: 3vw;
     margin-bottom:0;
+    width:100%;
+  }
+  .price-button{
+    font-size: 3vw;
+    line-height: 3vw;
   }
 }
 
