@@ -78,7 +78,7 @@ export default {
         {
           label: 'Пушкинская карта',
           class: 'pushkin-button',
-          icon: 'https://s3-alpha-sig.figma.com/img/7d5e/a11e/e8306d074636fb8665b0b43917511ae5?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FJKfYcIQI4kA9CUsaoAL2rvztn7-eaBKFhyk84KuVkKAsXqK3fgFDGis6GLT4whPaty63sPlIcTYneGdikl2EKcHmsjV3jpYwyCskcHPo~Lrgl~hRw7wjyrQMd3J~7TKJoi9Ogv3d4H0Y0dPoF4OJtDr19NpmUG7dQuHnxynomQP80aFWPl9sq3JLv5uD~iQwuMyvI9OB9ghenlAfF6-pSxcn2E1JWFVcK0zjrUqiTzhiDekfN6Y~sxr9Sa9HfUbwWFb-E6QGLT~hpQO15BDmpgSegH8sWaSj4X9O6u9W-yAm4ugkpLfH2ckG9ng7d6aBX1KTuJwI4QE0xFBZQJhbQ__'
+          icon: 'https://github.com/ywur7t/VLru/blob/main/VLRU/src/assets/pushkin.png?raw=true'
         },
 
       ],

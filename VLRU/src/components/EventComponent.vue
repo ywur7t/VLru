@@ -34,8 +34,8 @@
       return {
 
 
-        imageSrc: "https://s3-alpha-sig.figma.com/img/0a64/94df/4cd07b1826b5eaea63f0fe79bdb78db0?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kwQAPr-Fv2j~holPtnGI3rMCAsDqzVfS4qVgN4pKIkevydDQ~QZRkGIqGk1dCvpuHVqktJ5Fz7vewLqcwxwV1tL6KNjhNxdzstDw~CYk-j3GKLeMk0X0gNa7plJDaWpXlKFFnZtvTX~B3cwvSFZKRjZPZlgETcOr8kBWlCepyi0doRz1WDyhGc1fEcqRlEmMMDigUjIamQl45p-LJ3puX6NhxK6BjNJEj9PdWmvKK5cwCTfVVU4lgw3vvw7D7riXrnCPpEajhTSxupht9bw5GrQGH1hbLoxXF59ZHSjY6ZJVhuOG4HANQB5AzRnGtwBdpwvbtGrCH5et4~CkmeLKkw__",
-        isFavorite: false // Состояние для сердечка
+        imageSrc: "https://github.com/ywur7t/VLru/blob/main/VLRU/src/assets/4cd07b1826b5eaea63f0fe79bdb78db0.png?raw=true",
+        isFavorite: false
       };
     },
     methods: {

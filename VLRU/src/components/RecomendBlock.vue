@@ -48,7 +48,7 @@ export default {
         currentIndex: 0,
         events: [
           {
-            image: "https://s3-alpha-sig.figma.com/img/0a64/94df/4cd07b1826b5eaea63f0fe79bdb78db0?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kwQAPr-Fv2j~holPtnGI3rMCAsDqzVfS4qVgN4pKIkevydDQ~QZRkGIqGk1dCvpuHVqktJ5Fz7vewLqcwxwV1tL6KNjhNxdzstDw~CYk-j3GKLeMk0X0gNa7plJDaWpXlKFFnZtvTX~B3cwvSFZKRjZPZlgETcOr8kBWlCepyi0doRz1WDyhGc1fEcqRlEmMMDigUjIamQl45p-LJ3puX6NhxK6BjNJEj9PdWmvKK5cwCTfVVU4lgw3vvw7D7riXrnCPpEajhTSxupht9bw5GrQGH1hbLoxXF59ZHSjY6ZJVhuOG4HANQB5AzRnGtwBdpwvbtGrCH5et4~CkmeLKkw__",
+            image: "https://github.com/ywur7t/VLru/blob/main/VLRU/src/assets/4cd07b1826b5eaea63f0fe79bdb78db0.png?raw=true",
             category: "Концерт",
             type: "Живая музыка",
             title: "Магия Севера",
@@ -57,23 +57,22 @@ export default {
             price: "От 600 ₽"
           },
           {
-            image: "https://s3-alpha-sig.figma.com/img/0a64/94df/4cd07b1826b5eaea63f0fe79bdb78db0?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kwQAPr-Fv2j~holPtnGI3rMCAsDqzVfS4qVgN4pKIkevydDQ~QZRkGIqGk1dCvpuHVqktJ5Fz7vewLqcwxwV1tL6KNjhNxdzstDw~CYk-j3GKLeMk0X0gNa7plJDaWpXlKFFnZtvTX~B3cwvSFZKRjZPZlgETcOr8kBWlCepyi0doRz1WDyhGc1fEcqRlEmMMDigUjIamQl45p-LJ3puX6NhxK6BjNJEj9PdWmvKK5cwCTfVVU4lgw3vvw7D7riXrnCPpEajhTSxupht9bw5GrQGH1hbLoxXF59ZHSjY6ZJVhuOG4HANQB5AzRnGtwBdpwvbtGrCH5et4~CkmeLKkw__",
-            category: "Фестиваль",
-            type: "На открытом воздухе",
-            title: "Фестиваль Арт-весна",
-            description: "Творческие мероприятия на открытом воздухе во Владивостоке.",
-            date: "12 ноября 2024",
-            price: "Бесплатно"
+            image: "https://github.com/ywur7t/VLru/blob/main/VLRU/src/assets/4cd07b1826b5eaea63f0fe79bdb78db0.png?raw=true",
+            category: "Концерт",
+            type: "Живая музыка",
+            title: "Магия Севера",
+            description: "Волшебный концерт Олены УУТАЙ во Владивостоке 10 ноября 2024",
+            date: "10 ноября 2024",
+            price: "От 600 ₽"
+          },{
+            image: "https://github.com/ywur7t/VLru/blob/main/VLRU/src/assets/4cd07b1826b5eaea63f0fe79bdb78db0.png?raw=true",
+            category: "Концерт",
+            type: "Живая музыка",
+            title: "Магия Севера",
+            description: "Волшебный концерт Олены УУТАЙ во Владивостоке 10 ноября 2024",
+            date: "10 ноября 2024",
+            price: "От 600 ₽"
           },
-          {
-            image: "https://s3-alpha-sig.figma.com/img/0a64/94df/4cd07b1826b5eaea63f0fe79bdb78db0?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kwQAPr-Fv2j~holPtnGI3rMCAsDqzVfS4qVgN4pKIkevydDQ~QZRkGIqGk1dCvpuHVqktJ5Fz7vewLqcwxwV1tL6KNjhNxdzstDw~CYk-j3GKLeMk0X0gNa7plJDaWpXlKFFnZtvTX~B3cwvSFZKRjZPZlgETcOr8kBWlCepyi0doRz1WDyhGc1fEcqRlEmMMDigUjIamQl45p-LJ3puX6NhxK6BjNJEj9PdWmvKK5cwCTfVVU4lgw3vvw7D7riXrnCPpEajhTSxupht9bw5GrQGH1hbLoxXF59ZHSjY6ZJVhuOG4HANQB5AzRnGtwBdpwvbtGrCH5et4~CkmeLKkw__",
-            category: "Фестиваль",
-            type: "На открытом воздухе",
-            title: "Фестиваль Арт-весна",
-            description: "Творческие мероприятия на открытом воздухе во Владивостоке.",
-            date: "12 ноября 2024",
-            price: "Бесплатно"
-          }
         ]
       };
     },

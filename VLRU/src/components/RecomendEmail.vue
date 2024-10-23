@@ -18,7 +18,7 @@ import IconSend from './icons/IconSend.vue'
 <style scoped>
 
     #wrapper{
-        background-image: url("https://s3-alpha-sig.figma.com/img/febc/d544/03b3458a1da5e91e31db085b4e789e0c?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=c1kgojB4qM~fb-lWQtXzScretlmdFKiTuHnPrZHUCI5YI7zI9SP~uNpe7JOED75zw-xEUubW~dBWQooebH4jKYH4j-VJT~72KecoChZVx~7YIqc2aRPXubEAVIOOLWB3jGPXP03YBJlV8kC-tgsY6KT~4y3UJEzLF280CdsAugRnt-FpCWoi8FsLNvRQodEDUdapbcUkg3PHz6aNx7D1T3JL2T3SBXEwC8KpL~pJhpwx7gmZARKqpadk5QPMEOqhDK8lz7sOmrdVWQWbhkee18Lju79nVNahgLOot-YNma6XpfO7RlWroWfuxIDXKKKyTLKHO2oh6qy2GywofL6sTA__");
+        background-image: url("https://github.com/ywur7t/VLru/blob/main/VLRU/src/assets/03b3458a1da5e91e31db085b4e789e0c.jpeg?raw=true");
         background-repeat: no-repeat ;
         background-size: cover;
         width: 40%;

@@ -38,7 +38,7 @@
                 <a id="logo" href="https://www.vl.ru/"> <IconVLRU /> </a>
 
                 <div id="container_city">
-                  <a id="afisha" href="http://localhost:5173/"><span>Афиша</span></a>
+                  <a id="afisha" href="#"><span>Афиша</span></a>
                   <SelectComponent :options="options"
                   v-model="selectedOption" label=""/>
                 </div>
